@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 24px;
+  background-color: #f7f3f5;
+}
+
+/* Bước 18, 20 và CSS3 bổ sung (multi-background, border-radius, box-shadow) */
+#form1 table {
+  width: 500px;
+  margin: 0px auto;
+  border: 5px groove #993366;
+  background-color: #FFDDDD;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 221, 221, 0.9)),
+                    radial-gradient(circle at top right, rgba(153, 51, 102, 0.12), transparent 60%);
+  color: #003399;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(153, 51, 102, 0.25);
+  overflow: hidden;
+}
+
+/* CSS3 text-shadow cho tiêu đề bảng */
+#form1 caption {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: #661144;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+/* Bước 19 */
+#form1 table td {
+  border: 1px solid #CC9999;
+  vertical-align: middle;
+}
+
+/* Bước 17 và CSS3 bổ sung */
+.mytextbox {
+  color: #99FF33;
+  background-color: #006699;
+  border: 1px solid #996633;
+  width: 300px;
+  max-width: 100%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.mytextbox::placeholder {
+  color: #cceeff;
+  opacity: 0.85;
+}
+
+textarea.mytextbox {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.action-row {
+  text-align: center;
+}
+
+.action-row input[type="submit"],
+.action-row input[type="reset"] {
+  padding: 6px 14px;
+  margin: 0 4px;
+  border-radius: 5px;
+  border: 1px solid #993366;
+  background-color: #ffffff;
+  color: #003399;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.action-row input[type="submit"]:hover,
+.action-row input[type="reset"]:hover {
+  background-color: #ffe6ee;
+}
